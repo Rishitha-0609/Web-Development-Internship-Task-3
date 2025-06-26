@@ -20,31 +20,29 @@ npm install express
 node index.js
 You should see the output: Server is running on http://localhost:3000
 
-## Postman Installation
+## Postman API Platform Installation
 https://www.postman.com/downloads/
 download yo windows 
 open postman 
 After open Postman click on + icon near getting started on top middle of the screen
 
 1. GET /books (Return all books)
-Method: GET
-URL: http://localhost:3000/books
-Action: Click "Send".
-Result: You should see the initial array of three books in the response body.
+>Method: GET
+>URL: http://localhost:3000/books
+>Action: Click "Send".
+>Result: You should see the initial array of three books in the response body.
 
 
 2. POST /books (Add a new book)
-Method: POST
+>Method: POST
 
-URL: http://localhost:3000/books
+>URL: http://localhost:3000/books
 
-Action:
+>Go to the "Body" tab.
 
-Go to the "Body" tab.
+>Select "raw" and choose "JSON" from the dropdown.
 
-Select "raw" and choose "JSON" from the dropdown.
-
-Enter the following JSON in the text area:
+>Enter the following JSON in the text area:
 
 
 {
@@ -52,38 +50,36 @@ Enter the following JSON in the text area:
     "author": "Aldous Huxley"
 }
 
-Click "Send".
-Result: You will get the new book object back with id: 4 and a status of 201 Created. Run the GET request again to see it in the list.
+>Click "Send".
+>Result: You will get the new book object back with id: 4 and a status of 201 Created. Run the GET request again to see it in the list.
 
 
 4. PUT /books/:id (Update a book)
 
-Method: PUT
+>Method: PUT
 
-URL: http://localhost:3000/books/2 (We are updating the book with ID 2)
+>URL: http://localhost:3000/books/2 (We are updating the book with ID 2)
 
-Action:
+>Go to the "Body" tab.
 
-Go to the "Body" tab.
+>Select "raw" and "JSON".
 
-Select "raw" and "JSON".
-
-Enter the following JSON to update the book's title:
+>Enter the following JSON to update the book's title:
 
 {
     "title": "To Kill a Mockingbird - Revised",
     "author": "Harper Lee"
 }
 
-Click "Send".
-Result: You will get the updated book object back. Run the GET request again to verify the change.
+>Click "Send".
+>Result: You will get the updated book object back. Run the GET request again to verify the change.
 
 6. DELETE /books/:id (Remove a book)
 
-Method: DELETE
+>Method: DELETE
 
-URL: http://localhost:3000/books/1 (We are deleting the book with ID 1)
+>URL: http://localhost:3000/books/1 (We are deleting the book with ID 1)
 
-Action: Click "Send".
+>Action: Click "Send".
 
 NOTE: In background the server should be run the only the requests will work (Output will be shown in postman not in web Browser
