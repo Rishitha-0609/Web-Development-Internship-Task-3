@@ -82,4 +82,4 @@ After open Postman click on + icon near getting started on top middle of the scr
 
 >Action: Click "Send".
 
-NOTE: In background the server should be run the only the requests will work (Output will be shown in postman not in web Browser
+NOTE: In background the server should be run then only the requests will work in POSTMAN (Output will be shown in postman not in web Browser)
